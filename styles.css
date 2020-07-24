@@ -1,0 +1,78 @@
+/* Giving the body the specified background color */
+body {
+    background: white;
+  }
+/* Define navbar padding background color, font size and weight */
+.navbar-brand {
+    padding: 10px;
+    background-color: seagreen;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 10px;
+}
+/* set the font color of the page main header to white */
+#white-font{
+    color: white;
+}
+/* setleft margin for the container/body */
+.container-fluid{
+    margin-left: 20px;
+    
+}
+/* Define font color and style for plot page headers */
+.plot-header{
+    color: green;
+    font-weight: bold;
+}
+/* Set the height of the main plot for each page */
+.summary-image{
+    height: 450px;
+    
+}
+/* set the height of the side bar visualization images */
+.visualizations{
+height: 190px;
+
+}
+
+
+/* set the height of the comparison page plots  */
+.comparisons{
+    height: 350px;
+}
+
+/* Make selected image active in the sidebar when users hover cursor or mouse over on it in the sidebar */
+#selected{
+    border-color: green;
+    border-style: solid;
+}
+
+  /* Adding media queries to change navbar and image sizes at 450 pixels */
+@media (max-width: 450px) {
+/* hide navbar list items  */
+.nav-link{
+    visibility: hidden;
+}
+.nav-link{
+    visibility: visible;
+    
+}
+.dropdown-item{
+    visibility: visible;
+}
+    
+/* change the size of the main image */
+.summary-image{
+    height: 150px;
+}
+/* change the size of the side bar visualizations image */
+.visualizations{
+    height: 100px;
+}
+/* reduce margin and text wrap when screen size changes */
+.container-fluid{
+    overflow-wrap: break-word;
+    margin-left: 5px;
+}
+
+}
